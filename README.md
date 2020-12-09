@@ -14,7 +14,6 @@ A simplistic browser-based chatting application, made using Flask.
 1. HTML, CSS
 2. [Bootstrap CSS](https://getbootstrap.com/)
 3. JavaScript
-    * [Socket-IO](https://socket.io/)
 4. Python libraries and frameworks
     * The [Flask web framework](https://flask.palletsprojects.com/en/1.1.x/)
     * [Flask SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/)
