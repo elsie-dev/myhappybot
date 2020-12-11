@@ -1,10 +1,13 @@
-from flask import Flask, render_template, url_for
-app = Flask(__name__)
+from flask import Flask, render_template
 
-@app.route("/")
-@app.route("/home")
-def home():
-    return render_template('home.html', posts=posts)
+app = Flask(__name__)
+app.config['SECRET_KEY'] = 'secret?'
+
+
+@app.route('/')
+@app.route('/home')
+def index():
+    return render_template('index.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(app, debug=True)
