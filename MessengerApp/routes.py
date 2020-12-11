@@ -1,6 +1,7 @@
 from flask import render_template, url_for, flash, redirect
+from MessengerApp import app
 
-@app.route('/')
-@app.route('/home')
-def index():
-    return render_template('base.html')
+@app.route("/")
+@app.route("/home")
+def home():
+    return render_template('home.html')
